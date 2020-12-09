@@ -2,22 +2,11 @@
 
 import cv2
 
-'''
-ASCII = [   '$', '@', 'B', '%', '8', '&', 'W', 'M',
-            '#', '*', 'o', 'a', 'h', 'k', 'b', 'd',
-            'p', 'q', 'w', 'm', 'Z', 'O', '0', 'Q',
-            'L', 'C', 'J', 'U', 'Y', 'X', 'z', 'c',
-            'v', 'u', 'n', 'x', 'r', 'j', 'f', 't',
-            '/', '\\','|', '(', ')', '1', '{', '}',
-            '[', ']', '?', '-', '_', '+', '~', '<',
-            '>', 'i', '!', 'l', 'I', ';', ':', ',',
-            '"', '^', '`','\'', '.',
-]
-
-'''
 ASCII = [
     '@','%','#','*','+','=','-',':','.',' '
 ]
+
+SIZE = 256
 
 def map_range(src, dst, value):
     src_start, src_end = src
@@ -36,7 +25,6 @@ def row_to_line(row):
         res += gray_to_ascii(pixel)
     return res
 
-SIZE = 256
 
 cap = cv2.VideoCapture(0)
 cap.set(3,SIZE) #width
