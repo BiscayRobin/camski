@@ -25,15 +25,9 @@ def map_range(src, dst, value):
     return dst_start + ((value - src_start) * (dst_end - dst_start)) / (src_end - src_start)
 
 def gray_to_ascii(value):
-    '''
-    return ASCII[int(
-            map_range(
-            (0,255),
-            (0,len(ASCII)-1),
-            255-value)
-    )]
-    '''
-    return ASCII[len(ASCII)-1 - min(int(value * len(ASCII) / 255), len(ASCII)-1)]
+    return ASCII[
+            len(ASCII) - 1 - min(int(value * len(ASCII) / 255),            len(ASCII)-1)
+    ]
 
 
 def row_to_line(row):
