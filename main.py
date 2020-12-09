@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import numpy as np
 import cv2
+
 '''
 ASCII = [   '$', '@', 'B', '%', '8', '&', 'W', 'M',
             '#', '*', 'o', 'a', 'h', 'k', 'b', 'd',
