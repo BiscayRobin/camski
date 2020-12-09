@@ -46,7 +46,7 @@ while(ret):
     # Display the resulting frame
     text = ""
     for row in gray:
-        text += row_to_line(row) + '\n'
+        text += row_to_ASCII_line(row) + '\n'
     print(text + f'\033[{SIZE+1}A\033[K')
     cv2.imshow('frame',gray)
     if cv2.waitKey(1) & 0xFF == ord('q'):
