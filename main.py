@@ -52,10 +52,10 @@ i=0
 if cap.isOpened():
     ret, frame = cap.read()
 else:
-    ret = false
+    ret = False
 
 while(ret):
-    # Capture frame-by-frame
+    # Capture frame by frame
     ret, frame = cap.read()
 
     # Array of gray value
