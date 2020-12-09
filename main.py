@@ -19,7 +19,7 @@ def gray_to_ascii(value):
     ]
 
 
-def row_to_line(row):
+def row_to_ASCII_line(row):
     res = ""
     for pixel in row:
         res += gray_to_ascii(pixel)
