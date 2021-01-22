@@ -13,7 +13,7 @@ To test this i'm using tilix with a custom configuration specified below:
 
 ```
 custom font: monospace bold
-font size: 1
+font size: 2
 background color: #000000
 foreground color: #FFFFFF
 transparency: minimum
