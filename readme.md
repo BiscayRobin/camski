@@ -4,7 +4,8 @@ Toy project for camera handling using python. The idea came from this [article](
 
 # preview
 
-![result of camski face](https://github.com/BiscayRobin/camski/ressources/result1.png)
+![face and exterior](https://github.com/BiscayRobin/camski/ressources/face_details_and_exterior.gif)
+![hands moving](https://github.com/BiscayRobin/camski/ressources/hand_moving.gif)
 
 # reproduction
 
