@@ -45,8 +45,11 @@ def main():
 
         # Display the resulting frame
         text = ""
+        line_jumper = 0
         for row in gray:
-            text += row_to_ASCII_line(row) + '\n'
+            if line_jumper % 2:
+                text += row_to_ASCII_line(row) + '\n'
+            line_jumper += 1
         print(text + f'\033[{SIZE+1}A\033[K')
         cv2.imshow('frame',gray)
         if cv2.waitKey(1) & 0xFF == ord('q'):
